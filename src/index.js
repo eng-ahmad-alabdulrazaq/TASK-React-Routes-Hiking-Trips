@@ -10,6 +10,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Home from "./components/Home";
 import TripsList from "./components/TripsList";
+import TripDetail from "./components/TripDetail";
 
 //
 //imports post work
@@ -29,8 +30,12 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     children: [
-      { path: "/home", element: <Home /> },
+      { path: "/", element: <Home /> },
+      // { path: "/home", element: <Home /> },
+
       { path: "/tripslist", element: <TripsList /> },
+      //here
+      { path: "/tripdetail/:tripId", element: <TripDetail /> },
     ],
     // element: <div>Hello world!</div>,
   },

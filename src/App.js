@@ -1,5 +1,7 @@
 //\\ بسم الله الرحمن الرحيم //\\
 
+// in app.js details route /details, add a route param called tripId.
+
 import "./App.css";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
